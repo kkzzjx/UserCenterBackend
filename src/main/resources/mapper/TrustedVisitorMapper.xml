@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.TrustedVisitorMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.model.TrustedVisitor">
+            <id property="trustedID" column="trustedID" jdbcType="VARCHAR"/>
+            <result property="trustedName" column="trustedName" jdbcType="VARCHAR"/>
+            <result property="trustedGender" column="trustedGender" jdbcType="TINYINT"/>
+            <result property="trustedAge" column="trustedAge" jdbcType="INTEGER"/>
+            <result property="trustedTel" column="trustedTel" jdbcType="VARCHAR"/>
+            <result property="trustedCardId" column="trustedCardId" jdbcType="VARCHAR"/>
+            <result property="trustedHeight" column="trustedHeight" jdbcType="VARCHAR"/>
+            <result property="trustedHair" column="trustedHair" jdbcType="VARCHAR"/>
+            <result property="trustedFaceId" column="trustedFaceId" jdbcType="VARCHAR"/>
+            <result property="trustedFingerprint" column="trustedFingerprint" jdbcType="VARCHAR"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        trustedID,trustedName,trustedGender,
+        trustedAge,trustedTel,trustedCardId,
+        trustedHeight,trustedHair,trustedFaceId,
+        trustedFingerprint,createTime,updateTime,
+        isDelete
+    </sql>
+</mapper>
